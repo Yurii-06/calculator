@@ -1,13 +1,4 @@
-[16:04:14.112] DEBUG: > InputValuesHandler.isValidValues : 27 -> Validate input values.
-[16:04:14.112] DEBUG: > InputValuesHandler.isValidValues : 61 -> input value is: true
-[16:04:14.114] DEBUG: > InputValuesHandler.setValues : 67 -> Set InputValuesHandler values. Input string is: 1 + 1.
-[16:04:14.114] DEBUG: > SimpleCalculator.calculate : 41 -> "calculate" operation performed on operands: 1 and 1 using operator: +
-[16:04:14.114] DEBUG: > SimpleCalculator.add : 20 -> "add" operation performed on operands: 1 and 1
-[16:04:19.528] DEBUG: > InputValuesHandler.isValidValues : 27 -> Validate input values.
-[16:04:19.528] DEBUG: > InputValuesHandler.isValidValues : 61 -> input value is: true
-[16:04:19.528] DEBUG: > InputValuesHandler.setValues : 67 -> Set InputValuesHandler values. Input string is: 2 * 2.
-[16:04:19.528] DEBUG: > SimpleCalculator.calculate : 41 -> "calculate" operation performed on operands: 2 and 2 using operator: *
-[16:04:19.528] DEBUG: > SimpleCalculator.multiply : 35 -> "multiply" operation performed on operands: 2 and 2
-[16:04:26.585] DEBUG: > InputValuesHandler.isValidValues : 27 -> Validate input values.
-[16:04:26.585] DEBUG: > InputValuesHandler.isValidValues : 54 -> Expression length is less then 5 symbols!
-[16:04:26.585] DEBUG: > InputValuesHandler.isValidValues : 61 -> input value is: false
+[16:28:46.776] DEBUG: > InputValuesHandler.setValues : 63 -> Set InputValuesHandler values. Input string is: 1 + 1.
+[16:28:46.777] DEBUG: > SimpleCalculator.calculate : 41 -> "calculate" operation performed on operands: 1 and 1 using operator: +
+[16:28:46.778] DEBUG: > SimpleCalculator.add : 20 -> "add" operation performed on operands: 1 and 1
+[16:28:48.535] DEBUG: > InputValuesHandler.isValidValues : 52 -> Expression length is less then 5 symbols!
