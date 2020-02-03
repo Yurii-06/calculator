@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Stop output INFO at startup -->
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>[%d{HH:mm:ss.SSS}] %-5level: > %class{0}.%M : %L -> %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- log files -->
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <param name="MaxBackupIndex" value="7"/>
+
+        <!-- rolling every day -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${user.dir}/Logs/%d{yyyy-MM-dd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>[%d{HH:mm:ss.SSS}] %-5level: > %class{0}.%M : %L -> %msg%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <root level="debug">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+    <!-- LOGGERS -->
+    <logger name="file_logger" additivity="false" level="debug">
+        <appender-ref ref="file" />
+    </logger>
+    <!-- LOGGERS -->
+</configuration>
